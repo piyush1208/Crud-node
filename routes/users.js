@@ -51,13 +51,13 @@ router.patch('/:id',async(req,res)=> {
 })
 router.delete('/:id',async(req,res)=> {
     try{
-        const user = await User.findById(req.params.id) 
-        user.remove();
-        res.json(a1)   
+        const user = await User.findByIdAndRemove(req.params.id)
+        res.json(user)
     }catch(err){
         res.send('Error')
     }
 
 })
+
 
 module.exports = router
