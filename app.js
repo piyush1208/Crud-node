@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const url = 'mongodb+srv://test:1208piyush@cluster0.trqta.mongodb.net/Crud?retryWrites=true&w=majority'
+const url = 'your mongo url'  // paste your mongo url
 
 const app = express()
 
